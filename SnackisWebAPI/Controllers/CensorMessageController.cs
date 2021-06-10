@@ -22,7 +22,7 @@ namespace SnackisWebAPI.Controllers
         {
             _context = context;
         }
-
+        
         [HttpGet]
         public async Task<ActionResult<string>> RemoveBadWordsInText([FromHeader]string text)
         {
