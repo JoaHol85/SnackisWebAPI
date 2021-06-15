@@ -29,7 +29,7 @@ namespace SnackisWebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<SnackisWebApiContext>(options =>
-               options.UseSqlServer(Configuration.GetConnectionString("Local")));
+               options.UseSqlServer(Configuration.GetConnectionString("AzureWebAPI")));
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
